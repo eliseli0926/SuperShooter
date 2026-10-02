@@ -7,11 +7,14 @@ public class PlayerMovement : MonoBehaviour
     public float rotationSpeed;
     private Vector2 movementValue;
     private float lookValue;
+    private Rigidbody rb;
 
     private void Awake()
     {
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+
+        rb = GetComponent<Rigidbody>();
     }
 
     public void OnMove(InputValue value)
@@ -32,5 +35,12 @@ public class PlayerMovement : MonoBehaviour
             movementValue.y * Time.deltaTime);
 
         transform.Rotate(0, lookValue * Time.deltaTime, 0);
+
+        rb.AddRelativeForce(
+            movementValue.x * Time.deltaTime,
+            0,
+            movementValue.y * Time.deltaTime);
+
+        rb.AddRelativeTorque(0, lookValue * Time.deltaTime, 0);
     }
 }
