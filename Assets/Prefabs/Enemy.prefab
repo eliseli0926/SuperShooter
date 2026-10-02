@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 4665564731391188511}
   - component: {fileID: 6450714069328329956}
   - component: {fileID: 1697754913555445378}
-  m_Layer: 0
+  - component: {fileID: 3041482942391689353}
+  m_Layer: 7
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -136,8 +137,21 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!114 &3041482942391689353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1243805946252543261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ef23b626e2f84691bf2ceb82d7d7527, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amount: 10
 --- !u!1 &2742412617211444551
 GameObject:
   m_ObjectHideFlags: 0
@@ -150,7 +164,7 @@ GameObject:
   - component: {fileID: 5390458419417225348}
   - component: {fileID: 3447551707843332554}
   - component: {fileID: 1635917128327659295}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -254,7 +268,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2334726647213350832}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
