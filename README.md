@@ -1,1 +1,1 @@
-My hw4 demonstrates all of the rendering skills I picked up from the three chapters, including upgrading the structure and texture of the arena, creating a terrain and a layer of leaves on top, and adding a relatively realistic body of water.
+New additions in my mw5 submission include fire and smoke, explosion effect when enemy dies, waterfall, rain, lighting, new sky, post processing effects (motion blur, vignette etc.)
